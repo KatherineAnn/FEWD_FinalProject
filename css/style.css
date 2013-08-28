@@ -1,0 +1,446 @@
+/***************************** LAYOUT *****************/
+
+/***clean sticky footer ***/
+html, body{
+	height: 100%; 
+}
+
+/***clean sticky footer ***/
+body{
+	margin:0px;
+	padding:0px;
+}
+
+#wrapperWhite{
+	background-color: white;
+	border:5px solid black;
+	color:black;
+
+	/***clean sticky footer ***/
+	/*width:100%;*/
+	min-height: 100%;
+	height:auto !important;
+	height:100%;
+	margin:0px 0px -41px 0px;
+}
+
+#container{
+	width:960px;
+	margin-right:auto;
+	margin-left:auto; 
+
+	/***clean sticky footer ***/
+	width:100%;
+	padding:0px 0px 41px 0px;
+	min-width: 942px;
+}
+
+/***clean sticky footer ***/
+#innerContainer{
+	width: 942px;
+	margin: 0px auto;
+}
+
+#footer{
+	/*position:absolute;
+	width:100%;
+	background-color:blue;
+    height:100px;*/
+
+    /***clean sticky footer ***/
+    width:100%;
+    height:41px;
+    min-width: 942px;
+}
+
+p {
+	margin-bottom:15px; 
+	font-size:13px;
+}
+/***************************** NAVIGATION *****************/
+nav{
+	text-align: center;
+}
+
+nav li{
+	display:inline-block;
+	margin-right:75px;
+	margin-top:15px;
+	margin-bottom:40px;
+}
+
+#wrapperWhite nav li a {
+	display:inline-block;
+	text-decoration:none;
+	color:black;
+	font-family: Georgia;
+	font-size: 12px;
+}
+
+#wrapperWhite nav li a:hover{
+	color:#615E5F;
+}
+/***************************** INDEX PAGE *****************/
+#photosIndex{
+	width:960px;
+	height:600px;
+	overflow:hidden;
+	filter: url("data:image/svg+xml;utf8,<svg xmlns=\'http://www.w3.org/2000/svg\'><filter id=\'grayscale\'><feColorMatrix type=\'matrix\' values=\'0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0 0 0 1 0\'/></filter></svg>#grayscale");
+    filter: gray;  
+    -webkit-filter: grayscale(100%); 
+}
+
+#photosIndex:hover{
+	filter: none;  
+    -webkit-filter: grayscale(0%); 
+}
+
+#blurb p{
+	padding-top:25px;
+	height:200px;
+	color:#615E5F;
+	text-align: center;
+	letter-spacing: 4.0px;
+	line-height: 31.3px;
+	font-family:Georgia;
+	font-size: 24px;
+}
+/***************************** PRODUCT PAGE *****************/
+.productRowClass{
+	padding-top:1px;
+	padding-left:1px;
+}
+
+.productRowClass img{
+	height:234px;
+	width:234px; 
+	border:8px solid black; 
+	margin:30px;
+}
+
+/*fixed a bug where the href link was showing on some pictures 4/22/13 */
+.productRowClass a{
+	color:white;
+}
+
+section{
+	margin-bottom: 10px;
+}
+
+#purpleEarrings{
+	background:url(../images/purpleEarrings.png);
+	text-indent:100%;
+	white-space:nowrap;
+	overflow:hidden;
+}
+	#purpleEarrings{
+		background-position: 0 -284px; width: 234px; height: 234px;
+	}
+	#purpleEarrings:hover{
+		background-position: 0 0; width: 234px; height: 234px;
+	}
+
+#robinEggNecklace{
+	background:url(../images/robinEggNecklace.png);
+	text-indent:100%;
+	white-space:nowrap;
+	overflow:hidden;
+}
+	#robinEggNecklace:hover {
+		background-position: 0 -284px; width: 234px; height: 234px;
+	}
+
+	#robinEggNecklace{
+		background-position: 0 0; width: 234px; height: 234px; 
+	}
+
+#silverBracelet{
+	background:url(../images/silverBracelet.png);
+	text-indent:100%;
+	white-space:nowrap;
+	overflow:hidden;
+}
+	#silverBracelet:hover {
+		background-position: 0 0; width: 234px; height: 234px;
+	}
+
+	#silverBracelet{
+		background-position: 0 -284px; width: 234px; height: 234px;
+	}
+
+#flowerPin{
+	background:url(../images/flowerPin.png);
+	text-indent:100%;
+	white-space:nowrap;
+	overflow:hidden;
+}
+	#flowerPin:hover {
+		background-position: 0 0; width: 234px; height: 234px;
+	}
+
+	#flowerPin{
+		background-position: 0 -284px; width: 234px; height: 234px;
+	}
+
+#giraffeStool{
+	background:url(../images/giraffeStool.png);
+	text-indent:100%;
+	white-space:nowrap;
+	overflow:hidden;
+}
+	#giraffeStool:hover {
+		background-position: 0 0; width: 234px; height: 234px;
+	}
+
+	#giraffeStool{
+		background-position: 0 -284px; width: 234px; height: 234px;
+	}
+
+#laurelLeafFrame{
+	background:url(../images/laurelLeafFrame.png);
+	text-indent:100%;
+	white-space:nowrap;
+	overflow:hidden;
+}
+	#laurelLeafFrame:hover {
+		background-position: 0 0; width: 234px; height: 234px;
+	}
+
+	#laurelLeafFrame{
+		background-position: 0 -284px; width: 234px; height: 234px;
+	}
+
+#waterLilies{
+	background:url(../images/waterLilies.png);
+	text-indent:100%;
+	white-space:nowrap;
+	overflow:hidden;
+}
+	#waterLilies:hover {
+		background-position: 0 0; width: 234px; height: 234px;
+	}
+
+	#waterLilies{
+		background-position: 0 -284px; width: 234px; height: 234px;
+	}
+
+#whiteLiliesVase{
+	background:url(../images/whiteLiliesVase.png);
+	text-indent:100%;
+	white-space:nowrap;
+	overflow:hidden;
+}
+	#whiteLiliesVase:hover {
+		background-position: 0 0; width: 234px; height: 234px;
+	}
+
+	#whiteLiliesVase{
+		background-position: 0 -284px; width: 234px; height: 234px;
+	}
+
+#coasterSet{
+	background:url(../images/coasterSet.png);
+	text-indent:100%;
+	white-space:nowrap;
+	overflow:hidden;
+}
+	#coasterSet:hover {
+		background-position: 0 0; width: 234px; height: 234px;
+	}
+
+	#coasterSet{
+		background-position: 0 -284px; width: 234px; height: 234px;
+	}
+
+#teapot{
+	background:url(../images/teapot.png);
+	text-indent:100%;
+	white-space:nowrap;
+	overflow:hidden;
+}
+	#teapot:hover {
+		background-position: 0 0; width: 234px; height: 234px;
+	}
+
+	#teapot{
+		background-position: 0 -284px; width: 234px; height: 234px;
+	}
+
+#hammock{
+	background:url(../images/hammock.png);
+	text-indent:100%;
+	white-space:nowrap;
+	overflow:hidden;
+}
+	#hammock:hover {
+		background-position: 0 0; width: 234px; height: 234px;
+	}
+
+	#hammock{
+		background-position: 0 -284px; width: 234px; height: 234px;
+	}
+
+#card{
+	background:url(../images/card.png);
+	text-indent:100%;
+	white-space:nowrap;
+	overflow:hidden;
+}
+	#card:hover {
+		background-position: 0 0; width: 234px; height: 234px; 
+	}
+
+	#card{
+		background-position: 0 -284px; width: 234px; height: 234px;
+	}
+
+#chess{
+	background:url(../images/chess.png);
+	text-indent:100%;
+	white-space:nowrap;
+	overflow:hidden;
+}
+	#chess:hover {
+		background-position: 0 0; width: 234px; height: 234px;
+	}
+
+	#chess{
+		background-position: 0 -284px; width: 234px; height: 234px;
+	}
+
+#drum{
+	background:url(../images/drum.png);
+	text-indent:100%;
+	white-space:nowrap;
+	overflow:hidden;
+}
+	#drum:hover {
+		background-position: 0 0; width: 234px; height: 234px;
+	}
+
+	#drum{
+		background-position: 0 -284px; width: 234px; height: 234px;
+	}
+
+#basket{
+	background:url(../images/basket.png);
+	text-indent:100%;
+	white-space:nowrap;
+	overflow:hidden;
+}
+	#basket:hover {
+		background-position: 0 0; width: 234px; height: 234px;
+	}
+
+	#basket{
+		background-position: 0 -284px; width: 234px; height: 234px;
+	}
+/************************* PRODUCT X PAGE *******************/
+#prodImage{
+	text-align: center;
+    background-color: white;
+	padding-top:40px;
+}
+
+#prodImage img{
+	width:400px;
+	height:400px;
+}
+
+#prodText{
+	color:#615E5F;
+}
+
+#prodText p{
+	margin-right:8px;
+	margin-left:8px;
+}
+/*************************** ABOUT PAGE *******************/
+#photos {
+	float:left;
+	width:333px;
+	height:250px;
+	overflow:hidden;
+	text-align: center;
+	margin-right:15px;
+}
+
+#textInfo {
+	color:#615E5F;
+	padding:1px;
+	padding:10px;
+}
+
+#textTitle{
+	/*compensating for normalize css */
+	margin-top:0px;
+}
+
+#textInfo p{
+	margin-right:8px;
+	margin-left:8px;
+}
+/*************************** CONTACT PAGE *******************/
+#contactInfo p{
+	padding-top:10px;
+	color:#615E5F;
+	text-align: center;
+	letter-spacing: 4.0px;
+	line-height: 31.3px;
+	font-family:Georgia;
+	font-size: 21px;
+	padding-bottom:20px;
+}
+
+iframe{
+	filter: url("data:image/svg+xml;utf8,<svg xmlns=\'http://www.w3.org/2000/svg\'><filter id=\'grayscale\'><feColorMatrix type=\'matrix\' values=\'0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0 0 0 1 0\'/></filter></svg>#grayscale");
+    filter: gray;  
+    -webkit-filter: grayscale(100%); 
+}
+
+iframe:hover{
+	filter: none;  
+    -webkit-filter: grayscale(0%); 
+}
+
+.contactHeader{
+	text-align: center;
+	font-size:34px;
+	font-family: Georgia;
+	margin-top:32px;
+	margin-bottom:32px;
+}
+
+#contactForm ul{
+	/*overriding normalize left padding 40px */
+	padding:0px;
+}
+
+#contactForm ul li{
+	list-style-type: none;
+	display:inline;
+}
+
+#contactForm ul li input {
+	background-color: black;
+	color:white;
+	font-size: 12pt;
+	text-align: left;
+	padding-top:13px;
+	padding-bottom:13px;
+	margin-top: 5px;
+	width:306px;
+	border:none;
+}
+
+#contactForm #message{
+	width:931px;
+	height:200px;
+}
+
+#contactForm ul #btnSubmitLi input {
+	width:931px;
+	text-align:center;
+	background-color:white;
+	color:#615E5F;
+}
