@@ -429,17 +429,17 @@ iframe:hover{
 	padding-top:13px;
 	padding-bottom:13px;
 	margin-top: 5px;
-	width:306px;
+	width:305px;
 	border:none;
 }
 
 #contactForm #message{
-	width:931px;
+	width:927px; 
 	height:200px;
 }
 
 #contactForm ul #btnSubmitLi input {
-	width:931px;
+	width:927px;
 	text-align:center;
 	background-color:white;
 	color:#615E5F;
