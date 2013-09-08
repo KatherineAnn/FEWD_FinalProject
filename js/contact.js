@@ -38,7 +38,7 @@ $(document).ready(function(){
 				   $('#lName').attr('placeholder', 'name must be at least 2 characters');
 
 				   //adding red border for error
-				   $('#lName').css('border', '2px solid red');
+				   $('#lName').css('border', '1px solid red');
 				   return false;
 					}
 				else {
@@ -69,7 +69,7 @@ $(document).ready(function(){
 				   $('#phoneNumber').attr('placeholder', 'phone must be in format (555-555-5555)');
 
 				   //adding red border for error
-				   $('#phoneNumber').css('border', '2px solid red');
+				   $('#phoneNumber').css('border', '1px solid red');
 					return false;
 				}
 	
@@ -93,7 +93,7 @@ $(document).ready(function(){
 					$('#emailAddress').attr('placeholder', 'email must be valid');
 
 					//adding red border for error
-				    $('#emailAddress').css('border', '2px solid red');
+				    $('#emailAddress').css('border', '1px solid red');
 					return false;
 				}
 	
@@ -109,7 +109,7 @@ $(document).ready(function(){
 				   $('#message').attr('placeholder', 'message must be at least 2 characters');
 
 				   //adding red border for error
-				   $('#message').css('border', '2px solid red');
+				   $('#message').css('border', '1px solid red');
 				   return false;
 					}
 				else {
