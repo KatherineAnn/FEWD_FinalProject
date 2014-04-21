@@ -15,8 +15,10 @@ $(document).ready(function(){
 		custPhoneNumber  =  $('#phoneNumber'),
 		custMessage      =  $('#message'),
 		custContactForm	 =  $('#contactForm');
-			  
 		
+	//Ensuring placeholders are enabled at initial run for IE just in case
+	Placeholders.enable();	  
+	
 	//function to validate and add data once submit is clicked
 	custContactForm.submit(function(){
 
@@ -31,16 +33,22 @@ $(document).ready(function(){
 
 				if(custLNameVal.length < 2) {
 
-					//set value to null so placeholder shows
+				   //set value to null so placeholder shows
 				   $('#lName').val("");
-
+				    				  
 				   //updating placeholder with error message
 				   $('#lName').attr('placeholder', 'name must be at least 2 characters');
+				    
+				   //Calling Polyfill function to enable for IE
+			       Placeholders.enable();
 
-				   //adding red border for error
+ 				   //adding red border for error
 				   $('#lName').css('border', '1px solid red');
+				
 				   return false;
+
 					}
+
 				else {
 
 					//removing border from error if it exists
@@ -59,15 +67,20 @@ $(document).ready(function(){
 				   //removing border from error if it exists
 				   $('#phoneNumber').css('border', 'none');
 			  	   return true;
+
 					}
+
 				else {
 
-					//set value to null so placeholder shows
+				   //set value to null so placeholder shows
 				   $('#phoneNumber').val("");
 
-				    //updating placeholder with error message
+				   //updating placeholder with error message
 				   $('#phoneNumber').attr('placeholder', 'phone must be in format (555-555-5555)');
-
+				   
+				    //Calling Polyfill function to enable for IE
+				    Placeholders.enable();
+				  
 				   //adding red border for error
 				   $('#phoneNumber').css('border', '1px solid red');
 					return false;
@@ -84,14 +97,20 @@ $(document).ready(function(){
 				   //removing border from error if it exists
 				   $('#emailAddress').css('border', 'none');
 				   return true;
+
 					}
+
 				else {
+
 					//set value to null so placeholder shows
 					$('#emailAddress').val("");
 
 					//updating placeholder with error message
 					$('#emailAddress').attr('placeholder', 'email must be valid');
-
+					
+					//Calling Polyfill function to enable for IE
+					Placeholders.enable();
+					
 					//adding red border for error
 				    $('#emailAddress').css('border', '1px solid red');
 					return false;
@@ -100,22 +119,31 @@ $(document).ready(function(){
 			}//end validate email function
 
 			function validateMessage(){
+
 				if(custMessageVal.length < 3) {
 
 				   //set value to null so placeholder shows
 				   $('#message').val("");
-
+				  
 				   //updating placeholder with error message
 				   $('#message').attr('placeholder', 'message must be at least 2 characters');
-
+				  
+				    //Calling Polyfill function to enable for IE
+				    Placeholders.enable();
+				   
 				   //adding red border for error
 				   $('#message').css('border', '1px solid red');
+				   
 				   return false;
+
 					}
+
 				else {
+
 					//removing border from error if it exists
 					$('#message').css('border', 'none');
 					return true;
+
 				}
 	
 			} //end validate message function
@@ -130,16 +158,16 @@ $(document).ready(function(){
 				//clears data
 				customer.lName    = ''; 
 				$('#lName').val() = $('#lName.placeholder');
-				
+							
 				customer.phone          = '';
 				$('#phoneNumber').val() = $('#phoneNumber.placeholder');
-				
+							
 				customer.email           = '';
 				$('#emailAddress').val() = $('#emailAddress.placeholder');
-
+			
 				customer.message    = '';
 				$('#message').val() = $('#message.placeholder');
-			 				
+						 				
 			} //end of IF statement
 			
 			return false;

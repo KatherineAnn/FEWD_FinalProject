@@ -8,11 +8,19 @@ function slideshow(){
 	
 	var current = $('#photosIndex .show');
 	
-	//if the next image exists, take it, otherwise, begin with the first image again
-	var next    = current.next().length ? current.next() : current.siblings().first();
+		
+	 if (current.next().length==1){
+	 	var next=current.next();
+	 }
+
+	 else {
+	 	var next=current.siblings().first();
+	 }
 	
-	current.hide().removeClass('show');
-	next.fadeIn().addClass('show');
+	 current.hide().removeClass('show');
+
+	 next.fadeIn().addClass('show');
 	
-	setTimeout(slideshow, 6000);
+	 setTimeout(slideshow, 4000); 
+
 }

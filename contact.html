@@ -1,12 +1,13 @@
 <!doctype html>
-<html>
+<html data-placeholder-focus="false">
 	<head>
 		<meta charset="utf-8">
-    	<meta name="description" content="kate's fair trade market world headquarters in new york city">
-    	<meta name="keywords" content="fair trade market new york, handmade gifts new york">
-	
+    	<meta name="description" content="kate's fair trade market world headquarters in Lorem Ipsum, ZZ">
+    	<meta name="keywords" content="fair trade market, handmade gifts Lorem Ipsum, ZZ">
+    	<meta name="viewport" content="width=device-width"> 
+    	
 		<title>Contact Kate's Fair Trade</title>
-		
+
 		<!-- external CSS link -->
 		<link rel="stylesheet" href="css/normalize.css">
 		<link rel="stylesheet" href="css/style.css">
@@ -15,7 +16,7 @@
 		<![endif]-->
 	</head>
 	<body>
-				
+
 		<!-- wrapper for entire page to make border -->
 		<div id="wrapperWhite">
 			<nav>
@@ -23,7 +24,7 @@
 					<li><a href="index.html">HOME</a></li>
 					<li><a href="product.html">PRODUCTS</a></li>
 					<li><a href="about.html">ABOUT</a></li>
-					<li><a href="contact.html">CONTACT</a></li>		
+					<li><a href="contact.html">CONTACT</a></li>
 				</ul>
 			</nav>
 			<div id="container">
@@ -33,41 +34,41 @@
 
 					<div id="contactInfo">
 						<p>Kate's Fair Trade Market World Headquarters</p>
-						<p>Address: 10 E 21st Street
-						            New York, NY 10021</p>
+						<p>Address: 2 E 22nd Street
+						            Lorem Ipsum, ZZ 99999</p>
 						<p>Phone:   1-888-888-8888
 						   Fax  :   1-999-999-9999</p>
-						<p>Email:   info@katesfairtrademkt.com</p>
-					</div> 
-				
-					<p class="contactHeader">Directions</p>
-				
+						<p>Email:   info@sitametipsum.com</p>
+					</div>
+
+					<p class="contactHeader">Directions!</p>
+
 					<!-- office map -->
-				 	<iframe width="942" height="460" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.com/maps?f=q&amp;source=s_q&amp;hl=en&amp;geocode=&amp;q=10+E+21st,+New+York,+NY&amp;aq=&amp;sll=40.714551,-73.983977&amp;sspn=0.009384,0.021136&amp;ie=UTF8&amp;hq=&amp;hnear=10+E+21st+St,+New+York,+10010&amp;t=m&amp;ll=40.739974,-73.990088&amp;spn=0.023412,0.082397&amp;z=14&amp;iwloc=A&amp;output=embed"></iframe> <br> <!-- <small><a href="https://maps.google.com/maps?f=q&amp;source=embed&amp;hl=en&amp;geocode=&amp;q=10+E+21st,+New+York,+NY&amp;aq=&amp;sll=40.714551,-73.983977&amp;sspn=0.009384,0.021136&amp;ie=UTF8&amp;hq=&amp;hnear=10+E+21st+St,+New+York,+10010&amp;t=m&amp;ll=40.739974,-73.990088&amp;spn=0.023412,0.082397&amp;z=14&amp;iwloc=A" style="color:#0000FF;text-align:left">View Larger Map</a></small> -->
- 
+				  	<div id="map">
+                    	<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3022.9626735109505!2d-73.99006674999995!3d40.740846849999976!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c259a3f0453e37%3A0xe05fa3654e670987!2s2+E+22nd+St!5e0!3m2!1sen!2sus!4v1393014369574" width="942" height="600" frameborder="0" style="border:0"></iframe>
+                    </div>
+
 					<p class="contactHeader">Send us a message</p>
 
 					<!-- Contact form for questions -->
 					<form id="contactForm" action="#" method="post">
 						<ul>
-							<li>
+							<div class="inputForm">
 								<input type="text" name="lName" id="lName" placeholder="name" class="text">
-							</li>
-							<li>
-								<input type="email" name="emailAddress" id="emailAddress" placeholder="email address" class="text"> 
-							</li>
-							<li>
-								<input type="phone" name="phoneNumber" id="phoneNumber" placeholder="phone number ex: 555-555-5555" class="text"> 
-							</li>
-						
-							<li>
-								<input name="message" id="message" placeholder="your message" class="text">
-							</li>
+							</div>
+							<div class="inputForm">
+								<input type="email" name="emailAddress" id="emailAddress" placeholder="email address" class="text">
+							</div>
+							<div class="inputForm">
+								<input type="phone" name="phoneNumber" id="phoneNumber" placeholder="phone number ex: 555-555-5555" class="text">
+							</div>
 
+							<textarea id="message" placeholder="your message" class="text"></textarea>
+						    
 						 	<!-- submit button -->
-						 	<li id="btnSubmitLi"> 
+						 	<div id="btnSubmitLi">
 								<input id="btnSubmit" type="submit" value="Submit">
-							</li>
+							</div>
 						</ul>
 					</form>
 				</div> <!-- innerContainer -->
@@ -75,9 +76,10 @@
 		</div> <!--wrapper -->
 
 		<div id="footer"></div>
-			
+
 		<!-- Scripts -->
 		<script src="js/jquery-1.8.2.js"></script>
+		<script src="js/placeholders.jquery.min.js"></script>
 		<script src="js/contact.js"></script>
 	</body>
 </html>
